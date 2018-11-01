@@ -8,6 +8,10 @@ body{
 	text-transform: uppercase;
 }
 
+h1{
+	font-family: 'Bree Serif', serif;
+}
+
 .header{
 	margin: auto;
 	padding: 15px 0 15px 0;
@@ -48,9 +52,8 @@ body{
 	/* this is the code for all sections */
 	/* this is the code for all sections */
 #main_index article{
-	margin: 0 auto 100px auto;
+	margin: 0 auto 0 auto;
 	width: 50%;
-	height: 200px;
 }
 
 #main_index p{
@@ -103,6 +106,16 @@ body{
 	.large_screen{
 		display: none;
 	}
+	
+	.images{
+		width: 50%;
+		margin: auto;
+		display: block;
+	}
+	
+	.images_largescreen{
+		display: none;
+	}
 }
 
 @media screen and (min-width: 930px)
@@ -112,9 +125,10 @@ body{
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 	}
-
-	section > img{
-		width: 100%;
+	
+	.images img{
+		margin: auto;
+		width: 50%;
 		display: block;
 	}
 	
