@@ -3,23 +3,27 @@ body{
 	padding: 0;
 	
 	font-family: Arial, "serif";
+	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 h1{
-	font-family: 'Bree Serif', serif;
+	font-family: 'Bree Serif', "serif";
 }
 
 .header{
 	margin: auto;
 	padding: 15px 0 15px 0;
 	width: 50%;
+	height: 100px;
+	
+	font-size: 1.5em;
 	
 	background-image: url("img/companylogoBG.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 	/* this is the navigation bar css code */
@@ -54,14 +58,14 @@ h1{
 #main_index article{
 	margin: 0 auto 0 auto;
 	width: 50%;
+	
+	font-size: 2em;
 }
 
 #main_index p{
 	margin: 0;
 	padding: 15px 30px 15px 30px;
 	background-color: #2699FB;
-	
-	font-size: 35px;
 }
 
 #main_index span::before{
@@ -81,36 +85,57 @@ h1{
 
 @media screen and (max-width: 719px)
 {
+	body{
+		width: 100%;
+	}
+	
 	.header{
-		margin: auto;
-		padding: 15px 0 15px 0;
-		width: 50%;
+		padding: 1px 0 1px 0;
+		height: 100px;
+		width: 100%;
+		
+		font-size: 1em;
 		
 		background-image: url("img/companylogoBG.jpg");
-		background-size: 100%;
-		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.nav{
+		width: 50%;
+	}
+	
+	#letters{
+		display: none;
+	}
+	
+	#main_index{
+		font-size: 0.80em;
 	}
 }
 
 @media screen and (min-width: 720px) and (max-width: 929px)
-{
+{	
+	#dropdown{
+		display: none;
+	}
+
 	#main_index img{
 		display: block;
 	}
 	
 	#medium_img_left{
-		margin: 3px 2%;
+		margin: 3px 3%;
 		
-		width: 46%;
+		width: 44%;
 		height: 150px;
 		float: left;
 		object-fit: cover;
 	}
 	
 	#medium_img_right{
-		margin: 3px 2%;
+		margin: 3px 3%;
 		
-		width: 46%;
+		width: 44%;
 		height: 150px;
 		float: right;
 		object-fit: cover;
@@ -147,6 +172,10 @@ h1{
 		background-image: url("img/background.jpeg");
 		background-size: 100% auto;
 		background-repeat: no-repeat;
+	}
+	
+	#dropdown{
+		display: none;
 	}
 	
 	section > img{
