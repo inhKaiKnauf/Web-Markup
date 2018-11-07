@@ -48,28 +48,40 @@ h1{
 
 	/* this is the code for all sections */
 	/* this is the code for all sections */
-#main article{
+.main article{
 	margin: 0 auto 0 auto;
 	background-color: #2699FB;
 	font-size: 2em;
 }
 
-#main p{
+.main p{
 	margin: auto;
 	padding: 15px 30px 15px 30px;
 }
 
-#main span::before{
+.main span::before{
 	content: "\A";
 	white-space: pre;
 }	
 	
 	/* this is the code for the footer */
 	/* this is the code for the footer */
-#footer{
+.footer{
 	padding: 1px 0 1px 0;
 	text-transform: none;
 	background-color: #000;
+}
+
+form{
+	margin: 0;
+	
+	background-color: #F5F5F5;
+	text-align: left;
+	text-transform: none;
+}
+
+fieldset{
+	border: none;
 }
 
 @media screen and (max-width: 719px)
@@ -122,7 +134,7 @@ h1{
 		display: none;
 	}
 
-	#main > article{
+	.main > article{
 		height: 155px;
 	}
 	

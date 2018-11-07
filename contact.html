@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "kaiknaufcss.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		
+		<title> Contact Page </title>
+	</head>
+	<body>
+	
+		<header id = "header">
+			<h1> 
+				COMPANY NAME 
+			</h1>
+		</header>
+		
+		
+		<nav id = "nav">
+			<span id = "hamburger-menu">
+				<span> </span>
+				<span> </span>
+				<span> </span>
+			</span>
+			<ul id = "dropdown">
+				<li><a> </a></li>
+				<li><a> </a></li>
+				<li><a> </a></li>
+			</ul>
+			<ul id = "text-nav">
+				<li><a href = "index.html"> Home </a></li>
+				<li><a href = "#"> Product </a></li>
+				<li><a href = "contact.html"> Blog </a></li>
+			</ul>
+		</nav>
+		
+		
+		<article class = "main">
+			<article>
+				<p>
+					Contact
+				</p>
+			</article>
+			
+			<p>
+				More information
+			</p>
+			
+			<form action="nowhere.php" method="post">
+				<fieldset>
+					<label >Select topic</label>
+					<select>
+						<option value="general">General inquiries</option>
+						<option value="press">Press relations</option>
+						<option value="recruitement">Recruitement</option>
+					</select>
+				</fieldset>
+				<fieldset class="contactFormFieldset">
+					<input
+							type="text"
+							name="contactFormName"
+							placeholder="Your name.."
+					/>
+				</fieldset>
+				<fieldset class="contactFormFieldset">
+					<input
+							type="email"
+							name="email"
+							placeholder="Your email.."
+					/>
+				</fieldset>
+				<fieldset>
+					<textarea
+							rows="7"
+							cols="40"
+							name="message"
+							placeholder="Write something.."
+					></textarea>
+				</fieldset>
+				<input
+						type="submit"
+						value="Submit"
+				/>
+			</form>
+		</article>
+		
+		
+		<footer class = "footer"> 
+			<p>
+				&copy; 2018 - Kai Knauf - Inholland
+			</p>
+		</footer>
+	</body>
+</html>
