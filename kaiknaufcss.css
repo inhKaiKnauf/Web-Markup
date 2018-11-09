@@ -8,6 +8,7 @@ body{
 	text-align: center;
 	font-weight: normal;
 	text-transform: uppercase;
+	z-index: 0;
 }
 
 h1{
@@ -57,7 +58,8 @@ h1{
 	padding: 15px 0 15px 0;
 }
 
-.main p{
+.main h2{
+	font-weight: normal;
 	margin: auto;
 }	
 	
@@ -85,24 +87,24 @@ form p {
 }
 
 fieldset{
-	width: 100%;
-	float: left;
-	float: right;
 	border: none;
 }
 
 input{
-	margin-left: 7%;
-	width: 90%;
-	height: 20px;
+	width: 80%;
+	margin-left: 10%;
 }
 
 textarea{
 	font-family: Arial, "serif";
-	height: 50px;
+	height: 75px;
 	resize: none;
-	margin-left: 7%;
-	width: 90%;
+	margin-left: 10%;
+	width: 80%;
+}
+
+#hamburger-menu{
+	display: none;
 }
 
 #header-contact{
@@ -116,16 +118,13 @@ textarea{
 	margin: 0;
 }
 
-#header-form{
-	margin: 5px;
-}
-
 #button{
-	margin-left: 5%;
 	background-color: #2699FB;
 	color: #ffffff;
 	border: none;
 	height: 30px;
+	
+	width: 90%;
 }
 
 @media screen and (max-width: 719px)
