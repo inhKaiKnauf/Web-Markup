@@ -1,3 +1,6 @@
+/* this part of the css file contains the code used by ALL html files */
+/* this part of the css file contains the code used by ALL html files */
+
 body{
 	margin: auto;
 	padding: 0;
@@ -8,7 +11,7 @@ body{
 	text-align: center;
 	font-weight: normal;
 	text-transform: uppercase;
-	z-index: 0;
+	z-index: 0;					/* I set this z-index because of the background video */
 }
 
 h1{
@@ -29,7 +32,6 @@ h1{
 }
 
 	/* this is the navigation bar css code */
-	/* this is the navigation bar css code */
 #nav ul{
 	margin: 0;
 	padding: 8px 0 8px 0;
@@ -48,7 +50,10 @@ h1{
 	text-decoration: none;
 }
 
-	/* this is the code for all sections */
+#hamburger-menu{
+	display: none;		/* I put the hamburger menu on display: none, as it is only used on mobile */
+}
+
 	/* this is the code for all sections */
 .h1{
 	margin: 0 auto;
@@ -58,12 +63,11 @@ h1{
 	padding: 15px 0 15px 0;
 }
 
-.main h2{
+h2{
 	font-weight: normal;
 	margin: auto;
 }	
 	
-	/* this is the code for the footer */
 	/* this is the code for the footer */
 .footer{
 	padding: 1px 0 1px 0;
@@ -71,8 +75,12 @@ h1{
 	background-color: #000;
 }
 
-	/* this is all css code for the contact form */
-	/* this is all css code for the contact form */
+/* this marks the END of the part of the css file that contains the code used by ALL html files */
+/* this marks the END of the part of the css file that contains the code used by ALL html files */
+
+
+/* this part of the css file marks the BEGINNING of the general css code used for the contact page */
+/* this part of the css file marks the BEGINNING of the general css code used for the contact page */
 form{
 	margin: 0 auto 0 auto;
 	height: 300px;
@@ -103,10 +111,6 @@ textarea{
 	width: 80%;
 }
 
-#hamburger-menu{
-	display: none;
-}
-
 #header-contact{
 	background-color: #2699FB;
 	font-size: 2.5em;
@@ -127,6 +131,21 @@ textarea{
 	width: 90%;
 }
 
+/* this part of the css file marks the END of the general css code used for the contact page */
+/* this part of the css file marks the END of the general css code used for the contact page */
+
+/* this part of the css file marks the BEGINNING of the general css code used for the contact page */
+/* this part of the css file marks the BEGINNING of the general css code used for the contact page */
+
+#catalog{
+	padding: 5px 0;
+	background-color: #2699FB;
+	font-size: 1.8em;
+}
+
+/* this part of the css file marks the END of the general css code used for the contact page */
+/* this part of the css file marks the END of the general css code used for the contact page */
+
 @media screen and (max-width: 719px)
 {	
 	img{
@@ -143,10 +162,6 @@ textarea{
 		margin: 5px auto;
 		padding-top: 20px;
 		height: 34px;
-	}
-	
-	#main{
-		font-size: 0.80em;
 	}
 	
 	#always_present{
@@ -166,6 +181,10 @@ textarea{
 	}
 	
 	#product9-h1{
+		display: none;
+	}
+	
+	#background-vid{
 		display: none;
 	}
 }
@@ -212,6 +231,10 @@ textarea{
 	#product9-h1{
 		clear: both;
 	}
+	
+	#background-vid{
+		display: none;
+	}
 
 	.main > h1{
 		font-size: 3.3em;
@@ -233,10 +256,14 @@ textarea{
 {
 	body {
 		width: 50%;
-		
-		background-image: url("img/background.jpeg");
-		background-size: 100% auto;
-		background-repeat: no-repeat;
+		z-index: 0;
+	}
+	
+	#background-vid{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: -10;	
 	}
 	
 	img{
