@@ -14,6 +14,13 @@ body{
 	z-index: 0;					/* I set this z-index because of the background video */
 }
 
+#background-vid{
+		position: absolute;
+		z-index: -10;
+		left: 0;
+		width: 100%;
+}
+
 h1{
 	font-family: 'Bree Serif', "serif";
 	margin: auto;
@@ -81,6 +88,81 @@ h2{
 
 @media screen and (min-width: 720px) and (max-width: 929px)
 {
+	#header{
+		font-size: 2.5em;
+		height: 115px;
+	}
+	
+	.images{
+		margin: 0;
+		width: 100%;
+		
+		overflow: hidden;
+		position: relative;
+	}
+	
+	#images-product3{
+		float: left;
+		height: 350px;
+		width: 48%;		
+		display: inline-flex;
+		justify-content: center;
+		margin: 1%;
+		
+		overflow: hidden;
+		position: relative;
+	}
+	
+	#images-product3 img{
+		height: 100%;
+		width: auto;
+	}
+	
+	#images-product8{
+		float: right;
+		height: 350px;
+		width: 48%;		
+		display: block;
+		margin: 1%;
+		
+		overflow: hidden;
+		position: relative;
+	}
+	
+	#images-product8 img{
+		height: 100%;
+		width: auto;
+	}
+	
+	#medium_img_bottom{
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	
+	#product8{
+		display: none;
+	}
+	
+	#product6{
+		display: none;
+	}
+	
+	#background-vid{
+		display: none;
+	}
+	
+	#product8-header{
+		display: none;
+	}
+	
+	#product6-header{
+		display: none;
+	}
+	
+	#product9-header{
+		clear: both;
+	}
 }
 
 @media screen and (min-width: 930px)
@@ -90,14 +172,7 @@ h2{
 		z-index: 0;
 	}
 	
-	#background-vid{
-		position: absolute;
-		z-index: -10;
-		left: 0;
-		width: 100%;
-	}
-	
-	.test{
+	.images{
 		width: 100%;
 		height: 215px;
 		display: block;
@@ -106,17 +181,16 @@ h2{
 		position: relative;
 	}
 	
-	.test header{
-		height: 90px;
-		z-index: -8;
+	.images article{
+		width: 100%;
+		height: 215px;
 		display: block;
+		
+		overflow: hidden;
+		position: relative;
 	}
 	
-	.test h2{
-		margin: auto;
-	}
-	
-	.test img{		
+	.images img{		
 		height: auto;
 		width: 100%;
 		
@@ -125,7 +199,7 @@ h2{
 		transform: translateY(-50%);
 	}
 	
-	#product8{
+	#product81{
 		display: none;
 	}
 }
