@@ -159,7 +159,7 @@ textarea{
 
 @media screen and (max-width: 719px)
 {	
-	.main > img{
+	.main img{
 		padding: 5px;
 		width: 98%;
 		min-height: 200px;
@@ -183,15 +183,15 @@ textarea{
 		display: none;
 	}
 	
-	#product8-h1{
+	#product8-header{
 		display: none;
 	}
 	
-	#product6-h1{
+	#product6-header{
 		display: none;
 	}
 	
-	#product9-h1{
+	#product9-header{
 		display: none;
 	}
 	
@@ -238,7 +238,7 @@ textarea{
 		object-fit: cover;
 	}
 	
-	#product8{
+	#product81{
 		margin: 1%;
 		
 		width: 48%;
@@ -253,15 +253,23 @@ textarea{
 		object-fit: cover;
 	}
 	
-	#product8-h1{
+	#product8{
 		display: none;
 	}
 	
-	#product6-h1{
+	#product6{
 		display: none;
 	}
 	
-	#product9-h1{
+	#product8-header{
+		display: none;
+	}
+	
+	#product6-header{
+		display: none;
+	}
+	
+	#product9-header{
 		clear: both;
 	}
 	
@@ -323,15 +331,34 @@ textarea{
 		z-index: -10;	
 	}
 	
-	.main > img{
-		min-height: 400px;
-		display: block;
+	.images{
 		width: 100%;
-		height: 190px;
-		object-fit: cover;
+		height: 215px;
+		display: block;
+		
+		overflow: hidden;
+		position: relative;
 	}
 	
-	#product8{
+	.images article{
+		width: 100%;
+		height: 215px;
+		display: block;
+		
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.images img{		
+		height: auto;
+		width: 100%;
+		
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	#product81{
 		display: none;
 	}
 	
