@@ -11,7 +11,15 @@ body{
 	text-align: center;
 	font-weight: normal;
 	text-transform: uppercase;
-	z-index: 0;					/* I set this z-index because of the background video */
+	z-index: 0;			/* I set this z-index because of the background video */
+}
+
+	
+#background-vid{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -10;	
 }
 
 h1{
@@ -206,16 +214,19 @@ textarea{
 		display: none;
 	}
 	
-	#products-pics{
-		padding: 20px;
+	section > article{
+		display: none;
+	}
+	
+	#FlexParent{
+		padding: 20px;	
 		
 		display: grid;
 		grid-template-columns: auto;
 		grid-gap: 20px;
-		justify-content: center;
 	}
 
-	#products-pics > img{
+	#FlexParent > img{
 		height: 280px;
 		width: 100%;
 		object-fit: cover;
@@ -253,27 +264,11 @@ textarea{
 		object-fit: cover;
 	}
 	
-	#product8{
-		display: none;
-	}
-	
-	#product6{
-		display: none;
-	}
-	
-	#product8-header{
-		display: none;
-	}
-	
-	#product6-header{
-		display: none;
-	}
-	
 	#product9-header{
 		clear: both;
 	}
 	
-	#background-vid{
+	#product8, #product6, #product8-header, #product6-header, #background-vid{
 		display: none;
 	}
 
@@ -295,22 +290,24 @@ textarea{
 	/* this part marks the start of the products code */
 	/* this part marks the start of the products code */
 
-	#catalog{
+	#catalog, #products{
 		display: none;
 	}
 	
-	#products{
+	section article{
 		display: none;
 	}
 	
-	#products-pics{
+	#FlexParent{
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 7px;
 		justify-content: center;
+		width: 98%;
+		margin: 1% auto;
 	}
 
-	#products-pics > img{
+	#FlexParent > img{
 		height: 200px;
 		width: 100%;
 		object-fit: cover;
@@ -322,13 +319,6 @@ textarea{
 	body {
 		width: 50%;
 		z-index: 0;
-	}
-	
-	#background-vid{
-		position: absolute;
-		left: 0;
-		width: 100%;
-		z-index: -10;	
 	}
 	
 	.images{
@@ -349,11 +339,13 @@ textarea{
 		position: relative;
 	}
 	
-	.images img{		
+	.images img{				
 		height: auto;
 		width: 100%;
 		
-		position: relative;
+		/*the following three steps were my actions to center the image */
+		
+		position: relative;		
 		top: 50%;
 		transform: translateY(-50%);
 	}
@@ -366,20 +358,85 @@ textarea{
 	/* this part marks the start of the products code */
 
 	#products{
-		display: none;
+		display: none;		/*this is not displayeds as it only needs to be seen on mobile */
 	}
 	
-	#products-pics{
-		display: grid;
-		grid-template-columns: auto auto auto;
-		grid-gap: 7px;
-		justify-content: center;
+	#FlexParent{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+		
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #ffffff;		
+		justify-content: space-around;
+	}
+	
+	#pr1, #pr2, #pr3, #pr4, #pr5, #pr6, #pr7, #pr8, #pr9, #pr10, #pr11, #pr12{
+		margin: 3px;		/*I made every article 32% wide, so I was left with some sp[ace to put a margin in */
+		flex-basis: 32%;
+	}
+	
+	section figure{
+		margin: 0;
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 100px;		/*I made it this height because it looks good on monitor*/
+	}
+	
+	/*These are all background images put in the figure so that I can make them the right size */
+	#pr1 figure{
+		background-image: url("img/product1.jpg");
+	}
+	
+	#pr2 figure{
+		background-image: url("img/product2.jpg");
+	}
+	
+	#pr3 figure{
+		background-image: url("img/product3.jpg");
+	}
+	
+	#pr4 figure{
+		background-image: url("img/product4.jpg");
+	}
+	
+	#pr5 figure{
+		background-image: url("img/product5.jpg");
+	}
+	
+	#pr6 figure{
+		background-image: url("img/product6.jpg");
+	}
+	
+	#pr7 figure{
+		background-image: url("img/product7.jpg");
+	}
+	
+	#pr8 figure{
+		background-image: url("img/product8.jpg");
+	}
+	
+	#pr9 figure{
+		background-image: url("img/product9.jpg");
+	}
+	
+	#pr10 figure{
+		background-image: url("img/product10.jpg");
+	}
+	
+	#pr11 figure{
+		background-image: url("img/product11.jpg");
+	}
+	
+	#pr12 figure{
+		background-image: url("img/product12.jpg");
 	}
 
-	#products-pics > img{
-		height: 100px;
-		width: 100%;
-		object-fit: cover;
+	.FlexChild{
+		display: none;
 	}
 }
 
