@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
-		<link rel = "stylesheet" type = "text/css" href = "kaiknaufcss.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "css/kaiknaufcss.css"/>
+		<link href = "https://fonts.googleapis.com/css?family=Bree+Serif" rel = "stylesheet">
+		
+		<!-- these are all the link tags for my fav icon -->
+		<link rel = "icon" href = "Fav-Icon/icon_png.png" sizes = "16x16" type = "image/png"/>
+		<link rel = "icon" href = "Fav-Icon/icon_win.ico" sizes = "32x32 48x48" type = "image/vnd.microsoft.icon"/>
+		<link rel = "icon" href = "Fav-Icon/icon_mac.icns" sizes = "128x128 512x512 8192x8192 32768x32768"/>
+		<link rel = "icon" href = "Fav-Icon/icon_ios.png" sizes = "57x57" type = "image/png"/>
+		<link rel = "icon" href = "Fav-Icon/icon_svg.svg" sizes = "any" type = "image/svg+xml"/>
 		
 		<meta charset = "utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name = "keywords" content = "Products, mario, chess, cards, games, Rubik's Cube"/>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<meta name = "keywords" content = "Products, mario, chess, cards, games, Rubik's Cube, puzzles"/>
 		<meta name = "description" content = "A list of all our products"/>
 		<meta name = "author" content = "Kai Knauf"/>
 		
-		<title> Product Page </title>
+		<title> Products </title>
 	</head>
 	<body>
-		<video autoplay muted loop id="background-vid">
-			<source src="movie/background.mp4" type="video/mp4">
+		<video autoplay muted loop id = "background-video">
+				<source src = "movie/background.mp4" type = "video/mp4">
+				<source src = "movie/background.ogg" type = "video/ogg">
+				Oops video is not available.
 		</video>
 		
 		<header id = "header">
 			<h1> 
-				<strong>
-					COMPANY NAME 
-				</strong>
+				<strong> <a href = "index.html"> COMPANY NAME </a> </strong>
 			</h1>
 		</header>
 		
-		
+		<!-- this is the html code for the nav which I use for every page -->
 		<nav id = "nav">		
-			<ul id = "hamburger-menu">
-				<li><a> <span></span> </a></li>
-				<li><a> <span></span> </a></li>				
-				<li><a> <span></span> </a></li>
-			</ul>
-			
-			
-			<ul id = "text-nav">
+			<ul>
 				<li><a href = "index.html"> 
 					Home 
 				</a></li>
@@ -47,6 +47,7 @@
 			</ul>
 		</nav>
 		
+		<!-- both of these headers have different purposes in different pages -->
 		<header id = "catalog">
 			<h2>
 				product catalog
@@ -59,15 +60,19 @@
 			</h2>
 		</header>
 		
+		<!-- this aside is empty and is used for ads (but I don't have any so that's why they are empty -->
+		<aside id = "aside-left">
+		</aside>
+		
 		<section id = "FlexParent">
-			<article id = "pr1">
+			<article id = "pr1">			<!-- I used a figure tag in the article as I can then use the article to put in background images -->
 				<figure>
 				</figure>
 			</article>
 			
 			<img
 				class = "FlexChild"
-				src = "img/product1.jpg" 
+				src = "img/product1.png" 
 				alt = "A Rubik's Cube." 
 				title = "A Rubik's Cube"
 			/>
@@ -79,9 +84,9 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product2.jpg" 
-				alt = "" 
-				title = ""
+				src = "img/product2.png" 
+				alt = "A big 3D puzzle of a building." 
+				title = "Building a puzzle"
 			/>
 			
 			<article id = "pr3">
@@ -91,7 +96,7 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product3.jpg" 
+				src = "img/product3.png" 
 				alt = "Luigi standing next to Yoshi standing next to Mario." 
 				title = "Luigi, Yoshi, Mario"
 			/>
@@ -103,7 +108,7 @@
 			
 			<img
 				class = "FlexChild"				
-				src = "img/product4.jpg"
+				src = "img/product4.png"
 				alt = "All the products required to play Poker." 
 				title = "Poker"
 			/>
@@ -115,7 +120,7 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product5.jpg" 
+				src = "img/product5.png" 
 				alt = "A battlefield of chess pieces." 
 				title = "Chess"
 			/>
@@ -127,9 +132,9 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product6.jpg" 
-				alt = "" 
-				title = ""
+				src = "img/product6.png" 
+				alt = "Four wooden board game pieces in a row." 
+				title = "A board game"
 			/>
 			
 			<article id = "pr7">
@@ -139,7 +144,7 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product7.jpg" 
+				src = "img/product7.png" 
 				alt = "A board full of darts." 
 				title = "Darts"
 			/>
@@ -151,7 +156,7 @@
 			
 			<img
 				class = "FlexChild"				
-				src = "img/product8.jpg" 
+				src = "img/product8.png" 
 				alt = "The game Candy Crush being played by someone on a smartphone." 
 				title = "Candy Crush on a Smartphone"
 			/>
@@ -163,7 +168,7 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product9.jpg" 
+				src = "img/product9.png" 
 				alt = "A PS4 controller laying on a table." 
 				title = "PS4 Controller"
 			/>
@@ -175,7 +180,7 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product10.jpg" 
+				src = "img/product10.png" 
 				alt = "A Super Nintendo controller being held by someone." 
 				title = "Super Nintendo Controller"
 			/>
@@ -187,7 +192,7 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product11.jpg" 
+				src = "img/product11.png" 
 				alt = "An arcade game where you have to throw balls in containers to earn points." 
 				title = "Arcade"
 			/>
@@ -199,12 +204,17 @@
 			
 			<img
 				class = "FlexChild"
-				src = "img/product12.jpg" 
+				src = "img/product12.png" 
 				alt = "A shot of beer pong being played." 
 				title = "Beer Pong"
 			/>
 		</section>
 		
+		<!-- this aside is empty and is used for ads (but I don't have any so that's why they are empty -->
+		<aside id = "aside-right">
+		</aside>
+		
+		<!-- this footer code is the same for every page -->
 		<footer id = "footer">
 			<p>
 				&copy; 2018 - Kai Knauf - Inholland 
